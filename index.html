@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c26c12b7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card hot-weather">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <form>
+                <input
+                  type="text"
+                  class="form-control med-search"
+                  placeholder="Enter your city..."
+                  autocomplete="off"
+                  autofocus
+                  id="select-city"
+                />
+                &nbsp;
+                <button type="submit" class="btn">
+                  <i class="fas fa-search icon-search"></i>
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn" id="current-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="row big-text">
+            <div class="col-7">
+              <div class="align-right">
+                <h1 id="city-name">Bucharest</h1>
+                <h3 id="country-name">Romania</h3>
+                <p id="date-time"></p>
+                <h2 class="temperature" id="temperature">35°C</h2>
+                <!-- <span class="units">
+                  <a href="#" id="celsius-link">°C</a>
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span> -->
+              </div>
+            </div>
+            <div class="col-5">
+              <i class="fas fa-sun big-icon"></i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 1</h5>
+                  <i class="fas fa-sun med-icon"></i>
+                  <h4>34°C</h4>
+                  <h6>25°C</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 2</h5>
+                  <i class="fas fa-cloud-sun med-icon"></i>
+                  <h4>33°C</h4>
+                  <h6>23°C</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 3</h5>
+                  <i class="fas fa-sun med-icon"></i>
+                  <h4>36°C</h4>
+                  <h6>27°C</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 4</h5>
+                  <i class="fas fa-cloud med-icon"></i>
+                  <h4>28°C</h4>
+                  <h6>20°C</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 5</h5>
+                  <i class="fas fa-cloud-sun-rain med-icon"></i>
+                  <h4>20°C</h4>
+                  <h6>14°C</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 6</h5>
+                  <i class="fas fa-cloud-showers-heavy med-icon"></i>
+                  <h4>18°C</h4>
+                  <h6>13°C</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

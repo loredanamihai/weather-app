@@ -1,0 +1,79 @@
+body {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+/* .temperature {
+  display: inline-block;
+} */
+
+/* .units {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0; 
+} */
+
+.units a {
+  color: #ffcf20;
+  font-size: 35px;
+}
+
+#celsius-link {
+  display: none;
+}
+
+.card {
+  background: none;
+  border-color: #ffffff;
+}
+
+.med-search {
+  width: 35%;
+  display: inline;
+}
+
+.hot-weather {
+  background: linear-gradient(#821063, #f74b1d);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.align-right {
+  float: right;
+}
+
+.btn {
+  padding: 0;
+  color: #ffffff;
+}
+
+.big-text {
+  padding: 70px 0;
+}
+
+.big-icon {
+  font-size: 120px;
+  padding: 30px 0;
+}
+
+.med-icon {
+  font-size: 65px;
+  padding: 20px 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
